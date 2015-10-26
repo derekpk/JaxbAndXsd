@@ -12,7 +12,7 @@ In this instance of the application I'm using it to store the solution to a sudo
 xml data file and then output the contents to the console in a very basic 9 cell by 9 cell grid layout.
 
 There is a matching xsd file that defines the xml layout.
-
+```
 1 2 3  4 5 6  7 8 9  
 4 5 6  7 8 9  1 2 3  
 7 8 9  1 2 3  4 5 6  
@@ -24,9 +24,9 @@ There is a matching xsd file that defines the xml layout.
 6 7 8  9 1 2  3 4 5  
 3 4 5  6 7 8  9 1 2  
 9 1 2  3 4 5  6 7 8
-
+```
 Example of the xml:
-
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <p:grid xmlns:p="http://www.decoder.ie/namespaces" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.decoder.ie/namespaces Grid.xsd ">
   <p:XbyY p:length="0" p:width="0"/>
@@ -52,3 +52,4 @@ Example of the xml:
     <p:Value>8</p:Value>
   </p:cell>
 </p:grid>
+```
