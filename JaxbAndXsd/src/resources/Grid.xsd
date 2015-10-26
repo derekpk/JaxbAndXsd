@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dk:schema  xmlns:dk="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://www.decoder.ie/namespaces"
+            targetNamespace="http://www.decoder.ie/namespaces"
+            elementFormDefault="qualified"
+            attributeFormDefault="qualified">
+
+	<dk:element name="grid">
+	    <dk:complexType>
+	        <dk:sequence>
+	            <dk:element name="XbyY" minOccurs="1" maxOccurs="1">
+	                <dk:complexType>
+			            <dk:attributeGroup ref="gridAttributes"/>
+			        </dk:complexType>
+                </dk:element>
+
+                <dk:element name="cell" minOccurs="81" maxOccurs="81">
+			        <dk:complexType>
+			            <dk:sequence>
+			                <dk:element name="Value" type="ZeroToNine" minOccurs="1" maxOccurs="1" default="0"/>
+			            </dk:sequence>
+			            <dk:attributeGroup ref="cellAttributes"/>
+			        </dk:complexType>
+                </dk:element>
+
+	        </dk:sequence>
+	    </dk:complexType>
+    </dk:element>
+	
+    <dk:attributeGroup name="gridAttributes">
+        <dk:attribute name="width" type="dk:int" use="required"/>
+        <dk:attribute name="length" type="dk:int" use="required"/>
+    </dk:attributeGroup>
+
+    <dk:attributeGroup name="cellAttributes">
+        <dk:attribute name="X" type="ZeroToNine" use="required"/>
+        <dk:attribute name="Y" type="ZeroToNine" use="required"/>
+        <dk:attribute name="index" type="ZeroToEightyone" use="required"/>
+    </dk:attributeGroup>
+
+    <!-- Restrict values using ENUM -->
+    <dk:simpleType name="ZeroToNine">
+       <dk:restriction base="dk:int">
+           <dk:enumeration value="0"/>
+           <dk:enumeration value="1"/>
+           <dk:enumeration value="2"/>
+           <dk:enumeration value="3"/>
+           <dk:enumeration value="4"/>
+           <dk:enumeration value="5"/>
+           <dk:enumeration value="6"/>
+           <dk:enumeration value="7"/>
+           <dk:enumeration value="8"/>
+           <dk:enumeration value="9"/>
+        </dk:restriction>
+    </dk:simpleType>
+    
+    <!-- Restrict values using MIN and MAX -->
+    <dk:simpleType name="ZeroToEightyone">
+        <dk:restriction base="dk:integer">
+            <dk:minInclusive value="0"/>
+            <dk:maxInclusive value="81"/>
+        </dk:restriction>
+    </dk:simpleType>
+
+</dk:schema>
