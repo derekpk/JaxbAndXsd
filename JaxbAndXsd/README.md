@@ -30,25 +30,25 @@ Example of the xml:
 <?xml version="1.0" encoding="UTF-8"?>
 <p:grid xmlns:p="http://www.decoder.ie/namespaces" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.decoder.ie/namespaces Grid.xsd ">
   <p:XbyY p:length="0" p:width="0"/>
-  <p:cell p:X="0" p:Y="1" p:index="0">
+  <p:cell p:X="1" p:Y="1" p:index="0">
     <p:Value>1</p:Value>
   </p:cell>
-  <p:cell p:X="0" p:Y="2" p:index="1">
+  <p:cell p:X="1" p:Y="2" p:index="1">
     <p:Value>2</p:Value>
   </p:cell>
-  <p:cell p:X="0" p:Y="3" p:index="2">
+  <p:cell p:X="1" p:Y="3" p:index="2">
     <p:Value>3</p:Value>
   </p:cell>
-  <p:cell p:X="0" p:Y="4" p:index="3">
+  <p:cell p:X="1" p:Y="4" p:index="3">
     <p:Value>4</p:Value>
   </p:cell>
   .
   .
   .
-    <p:cell p:X="0" p:Y="0" p:index="79">
+    <p:cell p:X="9" p:Y="8" p:index="79">
     <p:Value>7</p:Value>
   </p:cell>
-  <p:cell p:X="0" p:Y="0" p:index="80">
+  <p:cell p:X="9" p:Y="9" p:index="80">
     <p:Value>8</p:Value>
   </p:cell>
 </p:grid>
