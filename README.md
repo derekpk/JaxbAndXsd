@@ -4,7 +4,7 @@ Copyright 2015 Derek Keogh Licensed under the Apache License, Version 2.0 (the "
 
 http://www.apache.org/licenses/LICENSE-2.0
 
-This application uses Jaxb, it's purpose is to read in an xml file containing data that is used to record a series of integers. In this instance of the application I'm using it to store the solution to a sudoku puzzle. A simple main method loads the xml data file and then output the contents to the console in a very basic 9 cell by 9 cell grid layout.
+This application was developed in Eclipse on Windows 7 using Java, Jaxb and xml, it's purpose is to read in an xml file containing data that is used to record a series of integers. In this instance of the application I'm using it to store the solution to a sudoku puzzle. A simple main method loads the xml data file and then output the contents to the console in a very basic 9 cell by 9 cell grid layout.
 
 There is a matching xsd file that defines the xml layout.
 ```
